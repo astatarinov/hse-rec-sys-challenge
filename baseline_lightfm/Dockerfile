@@ -10,11 +10,8 @@ RUN pip install tqdm catboost numpy pandas scikit-learn lightfm
 # Установка JupyterLab  
 RUN pip install jupyterlab  
   
-# Установка рабочей директории  
+# # Установка рабочей директории  
 WORKDIR /app  
-  
-# Копирование исходного кода в рабочую директорию  
-COPY . /app  
   
 # Настройка запуска JupyterLab  
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]
