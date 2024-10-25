@@ -1,0 +1,9 @@
+services:
+  jupyterlab:
+    image: my-python-image
+    container_name: jupyter-lab
+    restart: always
+    volumes:
+      - ${PWD}/notebooks:/srv/www/projects/
+    ports: 
+      - 8888:8888
