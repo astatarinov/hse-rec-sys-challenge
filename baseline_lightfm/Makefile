@@ -4,3 +4,6 @@ build:
 		-t my-python-image \
 		-f Dockerfile \
 		. \
+
+clean:  
+	docker rmi -f my-python-image  
