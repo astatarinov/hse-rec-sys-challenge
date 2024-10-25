@@ -1,0 +1,9 @@
+*.DS_Store
+**/.ipynb_checkpoints
+*.pyc
+**__pycache__
+**.tsv
+**.tfevents
+wandb
+**/hw2/data
+.DS_Store
